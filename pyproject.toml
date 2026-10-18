@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visual-scaffolding"
+version = "1.0.0"
+description = "Visual Scaffolding inference and NMR-Bench evaluation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["Pillow>=10"]
+license = "Apache-2.0"
+
+[project.optional-dependencies]
+inference = ["torch==2.11.0", "torchvision==0.26.0", "transformers==5.8.0", "Pillow==12.2.0", "safetensors==0.7.0", "tokenizers==0.22.2", "numpy==2.4.4"]
+
+[tool.setuptools.packages.find]
+include = ["visual_scaffolding*"]
+
+[tool.ruff]
+line-length = 100
