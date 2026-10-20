@@ -4,6 +4,8 @@
 
 论文 **Visual Scaffolding: Toward Native Multimodal Reasoning** 的代码与 benchmark。
 
+📄 **论文：**[arXiv:2610.25247](https://arxiv.org/abs/2610.25247) · [PDF](https://arxiv.org/pdf/2610.25247)
+
 | 资源 | 内容 | Hugging Face |
 |---|---|---|
 | 📚 **NMR-Bench** | 780 张测试图像及问题、答案 | [数据集](https://huggingface.co/datasets/ShaoRun/nmr-bench) |
@@ -20,7 +22,7 @@ Visual Scaffolding 是这一思路的具体实现。模型在生成推理过程�
 
 `图像与问题 → 推理 → [ref] → 检索视觉特征 → 插入证据 → 继续推理`
 
-具体实现基于 Qwen3-VL-4B-Thinking，两个任务使用分别训练的模型。本仓库提供推理代码和 **NMR-Bench** 评测器；benchmark 检验持续保持物体身份和空间连续性的能力。测试数据与模型已分别整理为待发布的 Hugging Face 仓库。
+具体实现基于 Qwen3-VL-4B-Thinking，两个任务使用分别训练的模型。本仓库提供推理代码和 **NMR-Bench** 评测器；benchmark 检验持续保持物体身份和空间连续性的能力。测试数据与模型已分别发布在 Hugging Face 仓库。
 
 ## 🎯 Benchmark
 
